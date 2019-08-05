@@ -1,0 +1,5 @@
+-cp 
+-cp ../linc
+-cpp cpp
+Z:.Workspace.linc_theorafile.test.src.Main
+-main Main

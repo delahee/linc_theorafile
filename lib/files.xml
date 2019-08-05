@@ -1,0 +1,111 @@
+<xml>
+
+<set name="NATIVE_TOOLKIT_LIB_PATH" value="Theorafile/lib"/>
+<set name="NATIVE_TOOLKIT_PATH" value="Theorafile"/>
+
+<files id="native-toolkit-theorafile-depends">
+    <depend name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/os_types.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/ogg.h"/>
+	
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/apiwrapper.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/bitpack.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/apiwrapper.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/codec.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/cpu.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/dct.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/decint.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/decint.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/decint.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/dequant.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/huffdec.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/huffman.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/internal.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/ocintrin.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/quant.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/theora.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/theoraenc.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/mmxfrag.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/mmxloop.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/theora/x86int.h"/>
+	
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/backends.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/bitrate.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/codebook.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/codec_internal.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/envelope.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/highlevel.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/lookup.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/lookup_data.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/lpc.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/lsp.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/masking.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/mdct.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/misc.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/os.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/psy.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/registry.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/scales.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/smallft.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/window.h"/>
+	
+		<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/books/coupled/res_books_51.h"/>
+		<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/books/coupled/res_books_stereo.h"/>		
+		<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/books/floor/floor_books.h"/>
+		<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/books/uncoupled/res_books_uncoupled.h"/>
+	
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/floor_all.h"/>
+	
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/psych_8.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/psych_11.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/psych_16.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/psych_44.h"/>
+	
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/residue_8.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/residue_16.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/residue_44.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/residue_44p51.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/residue_44u.h"/>
+	
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_8.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_11.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_16.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_22.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_32.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_44.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_44p51.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_44u.h"/>
+	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_X.h"/>
+	
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/bitwise.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/framing.c"/>
+	
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/apiwrapper.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/bitpack.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/cpu.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/decapiwrapper.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/decinfo.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/decode.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/dequant.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/fragment.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/huffdec.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/idct.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/internal.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/quant.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/state.c"/>
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/tinfo.c"/>
+	
+	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/tinfo.c"/>
+</files>
+
+<files id="native-toolkit-theorafile" tags="" >
+	<cache value="1" />
+	<depend files="native-toolkit-theorafile-depends"/>
+	<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/lib" />
+	
+	<file name="${NATIVE_TOOLKIT_PATH}/sdl/src/SDL.c" />
+	
+	<depend name="${NATIVE_TOOLKIT_PATH}/theorafile.h"/>
+	<file name="${NATIVE_TOOLKIT_PATH}/theorafile.c" />
+</files>
+
+</xml>

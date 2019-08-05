@@ -10,17 +10,23 @@
 		<echo value="building sub xml #haxe comp"/>
 
         <compilerflag value='-I${LINC_THEORAFILE_PATH}linc'/>
-        <!-- <compilerflag value='-DEMPTY_EXAMPLE_DEFINE_FOR_THE_CPP_CODE'/> -->
+		<compilerflag value='-I${LINC_THEORAFILE_PATH}lib/Theorafile'/>
+		<compilerflag value='-I${LINC_THEORAFILE_PATH}lib/Theorafile/lib'/>
+        
+		<include name="${LINC_THEORAFILE_PATH}/lib/defines.xml" />
 
-		<depend name="${LINC_THEORAFILE_PATH}/linc/linc_theorafile.h"/>
+		<depend name="${LINC_THEORAFILE_PATH}linc/linc_theorafile.h"/>
         <file name='${LINC_THEORAFILE_PATH}linc/linc_theorafile.cpp' />
 
     </files>
-
+			 
     <target id="haxe">
-		<!--<echo value="building sub xml #haxe target"/>-->
-        <!-- add linker flags to the haxe build output -->
-
+		<echo value="building sub xml #haxe target"/>
+		
+		<compilerflag value='-I${LINC_THEORAFILE_PATH}lib/Theorafile'/>
+		<depend name="${LINC_THEORAFILE_PATH}lib/Theorafile/theorafile.h"/>
+		
+		<file name='${LINC_THEORAFILE_PATH}linc/linc_theorafile.cpp' />
     </target>
 
 </xml>

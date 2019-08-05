@@ -3,7 +3,14 @@
 <set name="NATIVE_TOOLKIT_LIB_PATH" value="Theorafile/lib"/>
 <set name="NATIVE_TOOLKIT_PATH" value="Theorafile"/>
 
+<echo value="building lib xml"/>
+
 <files id="native-toolkit-theorafile-depends">
+	
+	<echo value="building lib xml deps"/>
+	
+	<depend name="${NATIVE_TOOLKIT_PATH}/theorafile.h"/>
+	
     <depend name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/os_types.h"/>
 	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/ogg.h"/>
 	
@@ -76,6 +83,22 @@
 	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_44u.h"/>
 	<depend name="${NATIVE_TOOLKIT_LIB_PATH}/vorbis/modes/setup_X.h"/>
 	
+	
+</files>
+
+<echo value="traversing lib xml "/>
+	
+<files id="native-toolkit-theorafile" tags="" >
+	<echo value="building lib xml files"/>
+	
+	<cache value="1" />
+	<depend files="native-toolkit-theorafile-depends"/>
+	
+	<compilerflag value="-I${NATIVE_TOOLKIT_PATH}" />
+	<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/lib" />
+	
+	<file name="${NATIVE_TOOLKIT_PATH}/theorafile.c" />
+	
 	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/bitwise.c"/>
 	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/framing.c"/>
 	
@@ -95,17 +118,6 @@
 	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/tinfo.c"/>
 	
 	<file name="${NATIVE_TOOLKIT_LIB_PATH}/ogg/tinfo.c"/>
-</files>
-
-<files id="native-toolkit-theorafile" tags="" >
-	<cache value="1" />
-	<depend files="native-toolkit-theorafile-depends"/>
-	<compilerflag value="-I${NATIVE_TOOLKIT_PATH}/lib" />
-	
-	<file name="${NATIVE_TOOLKIT_PATH}/sdl/src/SDL.c" />
-	
-	<depend name="${NATIVE_TOOLKIT_PATH}/theorafile.h"/>
-	<file name="${NATIVE_TOOLKIT_PATH}/theorafile.c" />
 </files>
 
 </xml>

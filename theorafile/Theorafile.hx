@@ -1,5 +1,7 @@
 package theorafile;
 
+private typedef Ptr<T> = cpp.Pointer<T>;
+
 @:keep
 @:include('linc_theorafile.h')
 #if !display
@@ -27,5 +29,29 @@ extern class Theorafile {
     static inline function other_inline_example() : Int {
         return _internal_example();
     }
+	
+	//@:native('tf_open')
+	//public static function tf_fopen( fname:cpp.ConstCharStar, file : cpp.Pointer<OggTheora_File> ) : Int;
+	
+	@:native('tata')
+	public static function tata():Int;
 
 } //Empty
+
+
+@:keep
+@:structAccess
+@:unreflective
+@:native("OggTheora_File")
+extern class OggTheora_File{
+	
+	public static inline function create() : OggTheora_File{
+		return untyped __cpp__("OggTheora_File()");
+	}
+}
+
+@:keep
+@:include('linc_theorafile.h')
+@:native("::cpp::Reference<OggTheora_File>") 
+extern class OggTheora_FileRef extends OggTheora_File {}
+

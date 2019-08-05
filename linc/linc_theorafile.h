@@ -8,6 +8,10 @@
 //include other library includes as needed
 // #include "../lib/____"
 
+//#include "theorafile.h"
+
+#include "../lib/Theorafile/theorafile.h"
+
 namespace linc {
 
     namespace theorafile {

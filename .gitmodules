@@ -1,0 +1,3 @@
+[submodule "lib/Theorafile"]
+	path = lib/Theorafile
+	url = https://github.com/FNA-XNA/Theorafile.git
